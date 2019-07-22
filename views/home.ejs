@@ -1,0 +1,13 @@
+<%include partials/header%>
+<h1>THE NAMES OF PEOPLE ARE:-</h1>
+<%for(var i=0;i<things.length;i++){%>
+    <li><%= things[i].name %></li>
+<%}%>
+<form action="/add" method="POST">
+    <input type="text" name="name">
+    <input type="text" name="age">
+    <button>submit</button>
+</form> 
+
+<%include partials/footer%>
+ 

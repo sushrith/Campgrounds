@@ -1,0 +1,20 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+<h1 style="text-align: center">ADD A COMMENT</h1>
+<div style="width:30%;margin:30px auto" >
+<form action="/<%=x.
+id%>/<%=x.cid%>/editcomment?_method=PUT" method="POST">
+
+ <div class="form-group">
+    <textarea rows="4" class="form-control"  type="text" name="x[text]" placeholder="enter the comment"><%= txt.text %></textarea>
+</div>
+    <button class="btn btn-lg btn-primary btn-block">submit</button>
+</form>
+<button class="btn btn-md btn-default" style="border: none"><a href="/campgrounds/<%= x.id %>/">Go Back</a></button>
+
+</div>
+</div>
+</div>
+<% include partials/footer %>
